@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dino Breaker</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #1a1a1a;
+      font-family: 'Arial', sans-serif;
+      color: #ffffff;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      color: #ffd700;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .header p {
+      font-size: 1.2em;
+      color: #cccccc;
+      margin: 10px 0;
+    }
+
+    .game-container {
+      padding: 10px;
+      border-radius: 10px;
+      background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .controls {
+      margin-top: 20px;
+      text-align: center;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      max-width: 800px;
+    }
+
+    .controls h2 {
+      color: #ffd700;
+      margin-top: 0;
+    }
+
+    .controls ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .controls li {
+      margin: 10px 0;
+      padding: 5px 0;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #666666;
+      font-size: 0.9em;
+    }
+
+    .game-container:hover {
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>DINO BREAKER</h1>
+    <p>A Prehistoric Arcade Experience</p>
+  </div>
+
+  <div class="game-container" id="game-container">
+    <!-- p5.js canvas will be inserted here -->
+  </div>
+
+  <div class="controls">
+    <h2>How to Play</h2>
+    <ul>
+      <li>🖱️ Use mouse to move paddle</li>
+      <li>🎯 Break all bricks to complete level</li>
+      <li>💥 Don't let the ball fall!</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>Created with ❤️ and p5.js | © 2025 Dino Breaker</p>
+  </div>
+
+  <!-- Load the game script after p5.js -->
+  <script src="game.js"></script>
+</body>
+</html>
